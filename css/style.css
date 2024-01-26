@@ -1,0 +1,57 @@
+/* ---------------- */
+/* HERO SECTION */
+/* ---------------- */
+.section-hero {
+  background-color: #dce9f1;
+  padding-bottom: 0;
+  height: 100vh;
+}
+
+.hero-wrapper {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1.6rem 3.2rem;
+  height: 100%;
+}
+
+.hero-service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.hero-service-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* ---------------- */
+/* SERVICE SECTION */
+/* ---------------- */
+.section-services {
+  padding-top: 20.6rem;
+}
+
+.service {
+  padding: 3.2rem 3.2rem;
+  background-color: rgba(255, 111, 65, 0.025);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: circle;
+}
+
+.section-services .grid {
+  gap: 4.8rem;
+}

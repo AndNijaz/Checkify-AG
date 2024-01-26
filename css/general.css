@@ -1,0 +1,181 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(9, 82, 125, 0.5);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #555;
+  font-size: 1.6rem;
+}
+
+a:link,
+a:visited {
+  color: #555;
+  text-decoration: none;
+}
+
+/* ---------------- */
+/* TEXT */
+/* ---------------- */
+.text-center {
+  text-align: center;
+}
+
+/* ---------------- */
+/* HEADINGS */
+/* ---------------- */
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #09527d;
+}
+
+.heading-primary span,
+.heading-secondary span {
+  font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #09527d;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  color: #09527d;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.subheading {
+  font-weight: 500;
+  color: #fb4c14;
+}
+
+/* ---------------- */
+/* CONTAINER */
+/* ---------------- */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* ---------------- */
+/* GRIDS */
+/* ---------------- */
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ---------------- */
+/* BUTTONS */
+/* ---------------- */
+.button {
+  background-color: #fb4c14;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 300ms;
+}
+
+.button:hover {
+  background-color: #c93d10;
+}
+
+/* ---------------- */
+/* MARGINS */
+/* ---------------- */
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-xsm {
+  margin-bottom: 3.2rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.margin-bottom-lg {
+  margin-bottom: 6.4rem !important;
+}
+
+.margin-left-sm {
+  margin-left: 1.6rem !important;
+}
+
+.margin-left-xsm {
+  margin-left: 3.2rem !important;
+}
+
+.margin-left-lm {
+  margin-left: 4.2rem !important;
+}
+
+.margin-top-md {
+  margin-top: 4.2rem !important;
+}
+.margin-top-md {
+  margin-top: 8rem !important;
+}
+
+/* ---------------- */
+/* LINKS */
+/* ---------------- */
+
+/* ---------------- */
+/* SECTION */
+/* ---------------- */
+section {
+  padding: 9.6rem 0rem;
+}
+
+/* ---------------- */
+/* ICONS */
+/* ---------------- */
+.checkmark-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #09527d;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: #ffe3db;
+  padding: 1.6rem;
+  border-radius: 100%;
+  color: #fb4c14;
+}
