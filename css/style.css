@@ -55,3 +55,46 @@
 .section-services .grid {
   gap: 4.8rem;
 }
+/* ---------------- */
+/* CEO SECTION */
+/* ---------------- */
+
+.ceo-container{
+  
+  padding: 3.2rem 6.4rem;
+  max-width: 100rem;
+  margin: 0 auto;
+ 
+
+}
+
+.ceo-img {
+  position: absolute;
+  bottom:0;
+  right: 0;
+  width: 35%; 
+}
+
+.ceo-img img {
+  display: block;
+  height:auto;
+  max-width: 80%;
+}
+
+/* ---------------- */
+/* FORM SECTION */
+/* ---------------- */
+
+
+.section-form {
+  background-color: #dce9f1;
+  padding-bottom: 0;
+  height: 100vh;
+}
+
+.form-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.6rem 9.6rem;
+  height: 100%;
+}

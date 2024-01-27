@@ -34,6 +34,15 @@ a:visited {
   text-align: center;
 }
 
+.white-text{
+  color: white !important;
+}
+
+.text-padding-left{
+
+  padding-left: 9.6rem;
+}
+
 /* ---------------- */
 /* HEADINGS */
 /* ---------------- */
@@ -86,6 +95,10 @@ a:visited {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+.grid--2-cols-3-2{
+  grid-template-columns: 3fr 2fr;
+
 }
 
 .grid--4-cols {
@@ -178,4 +191,53 @@ section {
   padding: 1.6rem;
   border-radius: 100%;
   color: #fb4c14;
+}
+
+/* ---------------- */
+/* PARAGRAPH */
+/* ---------------- */
+
+.wrapped-paragraph-50{
+
+  max-width: 50rem;
+}
+
+
+/* ---------------- */
+/* BACKGROUND BOXES */
+/* ---------------- */
+.darkblue-box{
+
+border-radius: 47.59px;
+background-color: #09527d;
+
+}
+
+/* ---------------- */
+/* POSITIONS */
+/* ---------------- */
+.position-relative{
+  position: relative;
+}
+
+/* ---------------- */
+/* INPUTS */
+/* ---------------- */
+textarea{
+
+  height:20rem !important;
+  margin-bottom: 0;
+  display: block;
+}
+.input-text{
+
+width: 40rem;
+height: 5rem;
+border-radius: 9px;
+background-color: #C1DBEA;
+border:none;
+font-family: "Montserrat", sans-serif;
+line-height: 1.6;
+color: #555;
+font-size: 1.6rem;
 }
