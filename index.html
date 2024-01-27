@@ -219,15 +219,19 @@
           <button class="button">All Services</button>
         </div>
       </section>
-
-    <section class="section-aboutus">
-        <div class="grid grid--2-cols container">
+      <section class="section-about-us">
+        <div class="container grid grid--2-cols">
           <div class="about-us-left">
             <span class="subheading">About us</span>
-            <h2 class="heading-secondary margin-bottom-md">We turn stagnation into <span>growth</span></h2>
-            <p class="wrapped-paragraph-50 margin-bottom-sm">Ckeckify AG is the company that will prioritize you and your needs over all other things. It is a company with a significant experience in consulting, management and business administration.</p>
+            <h2 class="heading-secondary margin-bottom-xsm">
+              We turn stagnation into <span>growth</span>
+            </h2>
+            <p class="wrapped-paragraph-50 margin-bottom-md">
+              Ckeckify AG is the company that will prioritize you and your needs
+              over all other things. It is a company with a significant
+              experience in consulting, management and business administration.
+            </p>
             <button class="button margin-bottom-md">Read more</button>
-            <br>
             <img src="./img/three-young-ladies-talk.png" />
           </div>
           <div class="about-us-right">
@@ -235,49 +239,135 @@
           </div>
         </div>
       </section>
-
       <section class="section-ceo">
         <div class="container text-center">
           <span class="subheading">Our CEO</span>
           <h2 class="heading-secondary margin-bottom-lg">
             Meet our founder and <span>CEO</span>
           </h2>
-          <br/>
-
+          <br />
         </div>
-        
-          <div class="grid grid--2-cols-3-2 margin-bottom-lg darkblue-box ceo-container position-relative">
-           <div class="ceo-text">
-            <h2 class=" white-text heading-secondary margin-bottom-xsm">Hi. I’m <span>Alma Palo.</span></h2>
-            <p class="wrapped-paragraph-50 margin-bottom-xsm white-text">I established Checkify AG to assist business owners and entrepreneurs through expert consulting services with the incorporation, management and administration of all types of entities in Switzerland.</p>
-            
-            <button class="button margin-bottom-sm text-center margin-left-lm">Read more</button>
-          </div> 
-           <div class="ceo-img">
-            <img src="./img/alma-palo-portrait.png" />
+        <div
+          class="container ceo-container grid grid--2-cols-3-2 margin-bottom-lg darkblue-box position-relative"
+        >
+          <div class="ceo-text">
+            <h2 class="heading-secondary white-text margin-bottom-xsm">
+              Hi. I’m <span>Alma Palo.</span>
+            </h2>
+            <p class="wrapped-paragraph-50 margin-bottom-xsm white-text">
+              I established Checkify AG to assist business owners and
+              entrepreneurs through expert consulting services with the
+              incorporation, management and administration of all types of
+              entities in Switzerland.
+            </p>
 
-           </div>      
+            <button class="button margin-bottom-sm text-center margin-left-lm">
+              Read more
+            </button>
+          </div>
+          <div class="ceo-img">
+            <img src="./img/alma-palo-portrait.png" />
+          </div>
         </div>
       </section>
+      <section class="section-form">
+        <div class="contact-wrapper grid grid--2-cols">
+          <div class="form-wrapper">
+            <div class="form">
+              <div class="form-heading">
+                <span class="subheading">Contact</span>
+                <h2 class="heading-secondary">
+                  Feel free to <span>contact us.</span>
+                </h2>
+              </div>
 
-      <section class="section-contact-form section-form">
-        <div class="form-wrapper grid grid--2-cols">
-          <div class="form text-padding-left">
-            <span class="subheading">Contact</span>
-          <h2 class="heading-secondary margin-bottom-lg ">
-            Feel free to <span>contact us.</span>
-          </h2>
-          <p class="form-paragraph margin-bottom-sm">Full Name</p>
-          <input type="text" id="username" name="username" class="input-text margin-bottom-xsm" placeholder="  Name and Surname">
-          <p class="form-paragraph margin-bottom-sm">Email address</p>
-          <input type="email" id="email" name="email" class="input-text margin-bottom-xsm" placeholder="  Email">
-          <p class="form-paragraph margin-bottom-sm">Message</p>
-          <textarea id="message" name="message" class="input-text margin-bottom-md" placeholder="  Type your message here..."></textarea>
-          <button class="button margin-bottom-md">Submit</button>
+              <div class="form-row">
+                <label for="username" class="form-paragraph">Full Name</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  class="input-text"
+                  placeholder="  Name and Surname"
+                />
+              </div>
+              <div class="form-row">
+                <label for="email" class="form-paragraph">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="input-text"
+                  placeholder="  Email"
+                />
+              </div>
+              <div class="form-row">
+                <label for="message" class="form-paragraph">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="input-text"
+                  placeholder="  Type your message here..."
+                ></textarea>
+              </div>
+              <button class="button">Submit</button>
+            </div>
           </div>
           <div class="map"></div>
         </div>
-      </section> 
+      </section>
     </main>
+    <footer class="footer-section">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              src="img/omnifood-logo.png"
+              alt="Omnifood logo"
+              class="header-logo"
+            />
+          </a>
+          <div class="social-row">
+            <ion-icon name="logo-instagram" class="footer-link"></ion-icon>
+            <ion-icon name="logo-facebook" class="footer-link"></ion-icon>
+            <ion-icon name="logo-twitter" class="footer-link"></ion-icon>
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Omnifood, Inc. All rights reserved.
+          </p>
+        </div>
+        <address class="address-links">
+          <p class="footer-title">Contact us</p>
+          <p class="adress">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+          </p>
+          <p>
+            <a href="tel:415-201-6370" class="footer-link">415-201-6370</a
+            ><br />
+            <a href="mailto:hello@omnifood.com" class="footer-link"
+              >hello@omnifood.com</a
+            >
+          </p>
+        </address>
+        <div class="nav-links">
+          <p class="footer-title">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link">Create account</a></li>
+            <li><a class="footer-link">Sign in</a></li>
+            <li><a class="footer-link">iOS app</a></li>
+            <li><a class="footer-link">Android app</a></li>
+          </ul>
+        </div>
+        <div class="nav-links">
+          <p class="footer-title">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link">About Omnifood</a></li>
+            <li><a class="footer-link">For Business</a></li>
+            <li><a class="footer-link">Cooking partners</a></li>
+            <li><a class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
