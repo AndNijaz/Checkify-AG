@@ -117,7 +117,7 @@
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 }
 
 .footer-title {
@@ -175,6 +175,15 @@
   line-height: 1.6;
 }
 
-.adress {
+.margin-bottom-footer{
   margin-bottom: 2.4rem;
+}
+
+
+
+.lg-footer-text{
+
+  font-size: 3.0rem;
+  opacity: 70%;
+
 }
