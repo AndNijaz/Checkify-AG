@@ -13,10 +13,40 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </head>
   <body>
+    <header class="header">
+      <a href="#">
+        <img
+          src="./img/checkify-logo.svg"
+          alt="Checkify logo"
+          class="header-logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">Home</a></li>
+          <li><a href="#" class="main-nav-link">Services</a></li>
+          <li>
+            <a href="#" class="main-nav-link">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="button">Contacts</button>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
     <main>
       <section class="section-hero">
         <div class="hero-wrapper grid grid--2-cols">
@@ -315,7 +345,7 @@
               <button class="button">Submit</button>
             </div>
           </div>
-          <div class="map"></div>
+          <div id="map" style="height: 400px; width: 100%"></div>
         </div>
       </section>
     </main>
@@ -341,11 +371,8 @@
         <address class="address-links">
           <p class="footer-title">Contact us</p>
           <p class="margin-bottom-footer">
-            <a class="footer-link"
-              >info@checkify.ch</a
-            ><br />
-            <a class="footer-link">+41 41 711 7066</a
-            >
+            <a class="footer-link">info@checkify.ch</a><br />
+            <a class="footer-link">+41 41 711 7066</a>
           </p>
           <p class="adress">
             Checkify Checkify AG Gubelstrasse 19, 6300 ZugSwitzerland
@@ -369,12 +396,12 @@
             <li><a class="footer-link">Careers</a></li>
           </ul>-->
         </div>
-        
       </div>
-      
+
       <div class="inwolve">
         <p>Copyright © 2024 developed by Inwolve</p>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
