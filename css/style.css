@@ -203,6 +203,7 @@
   align-items: center;
   background-color: #dce9f1;
   position: relative;
+  
 }
 
 .main-nav-list {
@@ -255,4 +256,21 @@
 
 .sticky .hero-section {
   margin-top: 8rem;
+}
+
+
+
+
+/* ---------------- */
+/* ABOUT US PAGE */
+/* ---------------- */
+.section-about-us-page-3 {
+  background-color: #dce9f1;
+  padding-bottom: 0;
+  height: 75vh;
+
+}
+.about-us-image-container{
+  display: flex;
+  justify-content: flex-end;
 }

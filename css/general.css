@@ -38,6 +38,14 @@ a:visited {
   color: white !important;
 }
 
+.blue-text{
+
+  color: #09527D !important;
+}
+.large-text{
+  font-size: 3.2rem;
+}
+
 /* ---------------- */
 /* HEADINGS */
 /* ---------------- */
