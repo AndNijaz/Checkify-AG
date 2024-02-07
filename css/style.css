@@ -57,6 +57,13 @@
 }
 
 /* ---------------- */
+/* ABOUT US SECTION */
+/* ---------------- */
+.section-about-us img {
+  width: 100%;
+}
+
+/* ---------------- */
 /* CEO SECTION */
 /* ---------------- */
 .ceo-container {
