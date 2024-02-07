@@ -60,19 +60,19 @@
 /* CEO SECTION */
 /* ---------------- */
 .ceo-container {
-  padding: 3.2rem 6.4rem;
+  padding: 3.2rem 6.4rem !important;
   max-width: 100rem !important;
+  position: relative;
 }
 
 .ceo-img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: relative;
 }
 
 .ceo-img img {
-  display: block;
-  max-width: 80%;
+  position: absolute;
+  top: -15.5rem;
+  width: 100%;
 }
 
 /* ---------------- */
@@ -203,10 +203,20 @@
   align-items: center;
   background-color: #dce9f1;
   position: relative;
-  
+}
+
+.main-nav {
+  display: flex;
+  width: 100%;
+}
+
+.main-nav .button {
+  margin-left: auto;
 }
 
 .main-nav-list {
+  overflow-x: hidden;
+  margin-left: auto;
   list-style: none;
   display: flex;
   gap: 12.8rem;
@@ -258,9 +268,6 @@
   margin-top: 8rem;
 }
 
-
-
-
 /* ---------------- */
 /* ABOUT US PAGE */
 /* ---------------- */
@@ -268,14 +275,156 @@
   background-color: #dce9f1;
   padding-bottom: 0;
   height: 75vh;
-
 }
-.about-us-image-container{
+
+.about-us-image-container {
   display: flex;
   justify-content: flex-end;
 }
 
-.paragraph-div{
+.paragraph-div {
   display: flex;
   align-items: center;
+}
+
+.image-and-text-section {
+  padding-top: 20.8rem;
+}
+
+/* ---------------- */
+/* SERVICES PAGE: SERVICES SECTION */
+/* ---------------- */
+.services-items {
+  gap: 3.2rem !important;
+}
+
+.service-item {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  align-items: center;
+  background-color: rgba(255, 111, 65, 0.0125);
+  padding: 1.6rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(9, 82, 125, 0.17);
+}
+
+.service-item:last-child {
+  grid-column: 2;
+}
+
+/* ---------------- */
+/* SERVICES PAGE: OTHER SERVICES SECTION */
+/* ---------------- */
+.services-container {
+  color: black;
+  gap: 4.8rem;
+}
+.services-container h3 {
+  font-size: 3rem;
+}
+
+.statutory-keeping,
+.accounting-services,
+.secretarial-services {
+  padding: 3.2rem 6.4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.statutory-keeping {
+  grid-row: 1/3;
+}
+
+.statutory-keeping-services-list,
+.accounting-services-list,
+.secretarial-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* ---------------- */
+/* SERVICES PAGE: REST SERVICES SECTION */
+/* ---------------- */
+.other-service {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.other-service:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.other-service img {
+  width: 100%;
+}
+
+.other-service-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.other-service-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.other-service-tag {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+}
+
+.other-service-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.other-service-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.other-service-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.other-service-icon {
+  color: #09527d;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.rest-services p {
+  color: #333;
+  font-size: 3rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
 }

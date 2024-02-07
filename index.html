@@ -6,6 +6,7 @@
     <title>Checkify | Empowering Your Bussines Growth</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,11 +22,21 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a href="./index.html">
         <img
           src="./img/checkify-logo.svg"
           alt="Checkify logo"
@@ -34,101 +45,103 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Home</a></li>
-          <li><a href="#" class="main-nav-link">Services</a></li>
+          <li><a href="./index.html" class="main-nav-link">Home</a></li>
+          <li><a href="./services.html" class="main-nav-link">Services</a></li>
           <li>
-            <a href="#" class="main-nav-link">About Us</a>
+            <a href="./about-us.html" class="main-nav-link">About Us</a>
           </li>
         </ul>
+        <a href="#contact" class="button">Contacts</a>
       </nav>
-      <button class="button">Contacts</button>
       <button class="btn-mobile-nav">
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="hero">
         <div class="hero-wrapper grid grid--2-cols">
           <div class="hero-text-container">
             <h1 class="heading-primary margin-bottom-md margin-top-md">
               Empowering your <span>business growth</span> is our expertise
             </h1>
-            <button class="button margin-bottom-md">Get Started</button>
-            <ul class="hero-service-list margin-left-lm">
-              <li>
-                <svg
-                  class="checkmark-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-                <a href="#"> Statutory Keeping </a>
-              </li>
-              <li>
-                <svg
-                  class="checkmark-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-                <a href="#"> Compliance Services </a>
-              </li>
-              <li>
-                <svg
-                  class="checkmark-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-                <a href="#"> Accounting Services </a>
-              </li>
-              <li>
-                <svg
-                  class="checkmark-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-                <a href="#"> Secretarial Services </a>
-              </li>
-            </ul>
+            <a href="#contact" class="button margin-bottom-md">Get Started</a>
+            <div class="hero-service-list-wrapper">
+              <ul class="hero-service-list margin-left-lm">
+                <li>
+                  <svg
+                    class="checkmark-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  <a href="#"> Statutory Keeping </a>
+                </li>
+                <li>
+                  <svg
+                    class="checkmark-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  <a href="#"> Compliance Services </a>
+                </li>
+                <li>
+                  <svg
+                    class="checkmark-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  <a href="#"> Accounting Services </a>
+                </li>
+                <li>
+                  <svg
+                    class="checkmark-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  <a href="#"> Secretarial Services </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="hero-image-container">
             <img src="./img/alma-palo.png" />
@@ -248,7 +261,7 @@
           </div>
         </div>
         <div class="container text-center">
-          <button class="button">All Services</button>
+          <a href="./services.html" class="button">All Services</a>
         </div>
       </section>
       <section class="section-about-us">
@@ -263,7 +276,9 @@
               over all other things. It is a company with a significant
               experience in consulting, management and business administration.
             </p>
-            <button class="button margin-bottom-md">Read more</button>
+            <a href="./about-us.html" class="button margin-bottom-md"
+              >Read more</a
+            >
             <img src="./img/three-young-ladies-talk.png" />
           </div>
           <div class="about-us-right">
@@ -293,16 +308,19 @@
               entities in Switzerland.
             </p>
 
-            <button class="button margin-bottom-sm text-center margin-left-lm">
+            <a
+              href="./about-us.html"
+              class="button margin-bottom-sm text-center margin-left-lm"
+            >
               Read more
-            </button>
+            </a>
           </div>
           <div class="ceo-img">
             <img src="./img/alma-palo-portrait.png" />
           </div>
         </div>
       </section>
-      <section class="section-form">
+      <section class="section-form" id="contact">
         <div class="contact-wrapper grid grid--2-cols">
           <div class="form-wrapper">
             <div class="form">
@@ -345,7 +363,7 @@
               <button class="button">Submit</button>
             </div>
           </div>
-          <div id="map" style="height: 400px; width: 100%"></div>
+          <div id="map"></div>
         </div>
       </section>
     </main>
@@ -381,10 +399,26 @@
         <div class="nav-links">
           <p class="footer-title">Services</p>
           <ul class="footer-nav">
-            <li><a class="footer-link">Statutory Keeping</a></li>
-            <li><a class="footer-link">Compliance Services</a></li>
-            <li><a class="footer-link">Accounting Services</a></li>
-            <li><a class="footer-link">Secretarial Services</a></li>
+            <li>
+              <a href="./services.html" class="footer-link"
+                >Statutory Keeping</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="footer-link"
+                >Compliance Services</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="footer-link"
+                >Accounting Services</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="footer-link"
+                >Secretarial Services</a
+              >
+            </li>
           </ul>
         </div>
         <div class="nav-links moto-div">

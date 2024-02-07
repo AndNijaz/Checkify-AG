@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -38,11 +39,10 @@ a:visited {
   color: white !important;
 }
 
-.blue-text{
-
-  color: #09527D !important;
+.blue-text {
+  color: #09527d !important;
 }
-.large-text{
+.large-text {
   font-size: 3.2rem;
 }
 
@@ -86,6 +86,7 @@ a:visited {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /* ---------------- */
@@ -102,6 +103,9 @@ a:visited {
 .grid--2-cols-3-2 {
   grid-template-columns: 3fr 2fr;
 }
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -110,6 +114,7 @@ a:visited {
 /* BUTTONS */
 /* ---------------- */
 .button {
+  display: inline-block;
   background-color: #fb4c14;
   color: #fff;
   outline: none;
@@ -121,6 +126,11 @@ a:visited {
   letter-spacing: 1.3px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 300ms;
+}
+
+.button:link,
+.button:visited {
+  color: #fff;
 }
 
 .button:hover {
@@ -185,6 +195,7 @@ section {
 }
 
 .icon {
+  display: flex;
   margin: 0 auto;
   width: 6.4rem;
   height: 6.4rem;
@@ -224,6 +235,7 @@ textarea {
   margin-bottom: 0;
   display: block;
 }
+
 .input-text {
   width: 40rem;
   height: 5rem;
@@ -234,4 +246,11 @@ textarea {
   line-height: 1.6;
   color: #555;
   font-size: 1.6rem;
+}
+
+/* ---------------- */
+/* MAP */
+/* ---------------- */
+#map {
+  height: 100%;
 }

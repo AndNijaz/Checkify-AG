@@ -1,0 +1,393 @@
+/* ---------------- */
+/* BELOW 1344px (Smaller desktops) */
+/* ---------------- */
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+/* ---------------- */
+/* BELOW 1200px (Landscape Tablets) */
+/* ---------------- */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  /* ---------------- */
+  /* HEADINGS */
+  /* ---------------- */
+  .header {
+    padding: 2.4rem 3.2rem;
+  }
+
+  /* ---------------- */
+  /* GRID  */
+  /* ---------------- */
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ---------------- */
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  /* ---------------- */
+  /* HERO SECTION  */
+  /* ---------------- */
+  .hero-image-container img {
+    max-width: 100%;
+  }
+
+  /* ---------------- */
+  /* SERVICES PAGE: SERVICE SECTION  */
+  /* ---------------- */
+  .service .heading-tertiary {
+    margin-bottom: 2.4rem;
+  }
+
+  .service-list {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .image-and-text-section .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ---------------- */
+  /* ABOUT US PAGE  */
+  /* ---------------- */
+  .zurich-img {
+    justify-self: center;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* ---------------- */
+/* BELOW 944px (Tablets) */
+/* ---------------- */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* ---------------- */
+  /* HEADINGS */
+  /* ---------------- */
+  .heading-secondary {
+    line-height: 1.6;
+  }
+
+  .heading-primary.margin-top-md {
+    margin-top: 0px !important;
+  }
+
+  /* ---------------- */
+  /* CONTAINERS */
+  /* ---------------- */
+  .container {
+    max-width: 100rem;
+  }
+
+  /* ---------------- */
+  /* GRIDS */
+  /* ---------------- */
+  .grid {
+    column-gap: 3.2rem;
+  }
+
+  /* ---------------- */
+  /* NAVBAR */
+  /* ---------------- */
+  .main-nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    /* transform: translateX(100%); */
+    pointer-events: none;
+    visibility: hidden;
+    gap: 3.2rem;
+  }
+
+  .main-nav .button {
+    margin: 0 auto;
+  }
+
+  .main-nav-list {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .main-nav-link {
+    font-size: 3rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    /* transform: translateX(0); */
+
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  /* ---------------- */
+
+  /* ---------------- */
+  /* HERO SECTION */
+  /* ---------------- */
+  .hero-wrapper {
+    max-width: 100rem;
+  }
+
+  /* ---------------- */
+  /* CEO SECTION */
+  /* ---------------- */
+  .ceo-container {
+    max-width: 90rem !important;
+  }
+
+  .ceo-img img {
+    top: -11.5rem;
+  }
+}
+
+/* ---------------- */
+/* BELOW 704px  (Smaller Tablets) */
+/* ---------------- */
+@media (max-width: 44em) {
+  /* ---------------- */
+  /* HEADINGS */
+  /* ---------------- */
+  .heading-primary {
+    text-align: center;
+  }
+
+  /* ---------------- */
+  /* GRIDS */
+  /* ---------------- */
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid--2-cols-3-2 {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: 4fr 1fr; */
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+  }
+
+  /* ---------------- */
+  /* CONTAINERS */
+  /* ---------------- */
+  .container {
+    max-width: 65rem;
+  }
+
+  /* ---------------- */
+  /* HERO-SECTION */
+  /* ---------------- */
+  .hero-text-container {
+    text-align: center;
+  }
+
+  .hero-service-list.margin-left-lm {
+    margin: 0px !important;
+    margin: 0 auto;
+    /* align-items: center; */
+  }
+
+  .hero-service-list-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-image-container {
+    height: 65%;
+    margin: 0 auto;
+  }
+
+  .hero-image-container img {
+    height: 100%;
+  }
+
+  /* ---------------- */
+  /* SERVICES-SECTION */
+  /* ---------------- */
+  .section-services .grid {
+    gap: 2.4rem;
+  }
+
+  .service {
+    padding: 1.2rem 2.4rem;
+  }
+
+  /* ---------------- */
+  /* CEO-SECTION */
+  /* ---------------- */
+  .section-ceo .heading-secondary {
+    margin-bottom: 2.4rem !important;
+  }
+
+  .ceo-container {
+    max-width: 65rem !important;
+    padding: 3.2rem !important;
+  }
+  .ceo-img {
+    height: 50%;
+  }
+  .ceo-img img {
+    display: none;
+  }
+  .ceo-text button {
+    display: block;
+    margin: 0 auto !important;
+  }
+  .ceo-text h2 {
+    text-align: center;
+  }
+  .ceo-text p {
+    margin: 0 auto;
+  }
+  /* ---------------- */
+  /* ABOUT-US-SECTION */
+  /* ---------------- */
+  .about-us-right {
+    display: none;
+  }
+
+  .wrapped-paragraph-50 {
+    max-width: 43rem;
+  }
+
+  /* ---------------- */
+  /* SERVICES PAGE: FIRST SERVICES SECTION */
+  /* ---------------- */
+  .services-items.grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-item:last-child {
+    grid-column: 1/3;
+  }
+
+  /* ---------------- */
+  /* SERVICES PAGE: OTHER SERVICES SECTION */
+  /* ---------------- */
+  .section-other-services .grid--3-cols {
+    row-gap: 4.8rem;
+  }
+
+  .accounting-services {
+    grid-row: 1/2;
+  }
+
+  .statutory-keeping {
+    grid-row: 2/3;
+  }
+
+  /* ---------------- */
+  /* SERVICES PAGE: REST SERVICES SECTION */
+  /* ---------------- */
+  .rest-services {
+    justify-self: center;
+  }
+
+  /* ---------------- */
+  /* ABOUT US PAGE: */
+  /* ---------------- */
+  .about-us-image-container img {
+    width: 100%;
+  }
+
+  .zurich-img img {
+    max-width: 100%;
+  }
+
+  .image-and-text-section {
+    padding-top: 35.8rem;
+  }
+}
+
+/* ---------------- */
+/* BELOW 544px (Mobile) */
+/* ---------------- */
+@media (max-width: 34em) {
+  section {
+    padding: 6.4rem 0;
+  }
+
+  /* ---------------- */
+  /* GRIDS */
+  /* ---------------- */
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ---------------- */
+  /* SERVICES SECTION */
+  /* ---------------- */
+  .service {
+    padding: 3.2rem;
+  }
+
+  /* ---------------- */
+  /* FOOTER SECTION */
+  /* ---------------- */
+  .grid--footer {
+    column-gap: 1.2rem;
+  }
+
+  /* ---------------- */
+  /* CEO SECTION */
+  /* ---------------- */
+  .ceo-container {
+    max-width: 45rem !important;
+    padding: 3.2rem !important;
+  }
+
+  /* ---------------- */
+  /* SERVICES PAGE: FIRST SERVICES SECTION */
+  /* ---------------- */
+  .service-item {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.6rem;
+    text-align: center;
+  }
+
+  /* ---------------- */
+  /* ABOUT US PAGE */
+  /* ---------------- */
+  .large-text {
+    font-size: 2.4rem;
+  }
+  .image-and-text-section {
+    padding-top: 15.8rem;
+  }
+}

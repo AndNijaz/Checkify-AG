@@ -6,9 +6,11 @@
     <title>About us | Empowering Your Bussines Growth</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -21,7 +23,17 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -34,57 +46,71 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Home</a></li>
-          <li><a href="#" class="main-nav-link">Services</a></li>
+          <li><a href="./index.html" class="main-nav-link">Home</a></li>
+          <li><a href="./services.html" class="main-nav-link">Services</a></li>
           <li>
-            <a href="#" class="main-nav-link">About Us</a>
+            <a href="./about-us.html" class="main-nav-link">About Us</a>
           </li>
         </ul>
+        <a href="#contact" class="button">Contacts</a>
       </nav>
-      <button class="button">Contacts</button>
       <button class="btn-mobile-nav">
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
-    
+
     <main>
       <section class="section-about-us-page-3">
         <div class="container">
           <span class="subheading">About us</span>
           <h2 class="heading-secondary margin-bottom-xsm">
             <span>We turn stagnation into growth</span>
-          </h2>  
-          <p class="about-us-paragraph large-text blue-text margin-bottom-md">Checkify AG is a different type of company. It is the company that will prioritize you and your needs over all other things. It is a company with a significant experience in consulting, management and business administration.</p>
-
+          </h2>
+          <p class="about-us-paragraph large-text blue-text margin-bottom-md">
+            Checkify AG is a different type of company. It is the company that
+            will prioritize you and your needs over all other things. It is a
+            company with a significant experience in consulting, management and
+            business administration.
+          </p>
         </div>
         <div class="container about-us-image-container">
-          <img src="./img/switzerland.png">
+          <img src="./img/switzerland.png" />
         </div>
       </section>
+
       <section class="image-and-text-section">
         <div class="container large-text margin-bottom-md">
           <div class="paragraph-div margin-bottom-md">
-          <p class="about-us-paragraph">
-            Our most important reference is the relationship we build with our clients. We never fail our client’s trust and that is why are we always their first choice. We are solution oriented and do not fear to take over the most difficult tasks for our clients.
-It is the highest standards of excellence in all fields of business that we stand behind.
-          </p>
-
+            <p class="about-us-paragraph">
+              Our most important reference is the relationship we build with our
+              clients. We never fail our client’s trust and that is why are we
+              always their first choice. We are solution oriented and do not
+              fear to take over the most difficult tasks for our clients. It is
+              the highest standards of excellence in all fields of business that
+              we stand behind.
+            </p>
           </div>
-        
+
           <div class="grid grid--2-cols">
             <div class="zurich-img">
-            <img src="./img/zurich.png">
+              <img src="./img/zurich.png" />
             </div>
             <div class="paragraph-div">
-            <p>Our strength is based on a partner relationship with our clients, excellent knowledge of the market and successful business practice.
-              We speak the language of administration and we will contribute to the success of your business. We will offer constructive and proactive solutions.
-              Inspired by the highest business and moral standards, we are focused on success of our clients.</p>
+              <p>
+                Our strength is based on a partner relationship with our
+                clients, excellent knowledge of the market and successful
+                business practice. We speak the language of administration and
+                we will contribute to the success of your business. We will
+                offer constructive and proactive solutions. Inspired by the
+                highest business and moral standards, we are focused on success
+                of our clients.
+              </p>
             </div>
+          </div>
         </div>
-      </div>
       </section>
-      <section class="section-form">
+      <section id="contact" class="section-form">
         <div class="contact-wrapper grid grid--2-cols">
           <div class="form-wrapper">
             <div class="form">
@@ -127,10 +153,9 @@ It is the highest standards of excellence in all fields of business that we stan
               <button class="button">Submit</button>
             </div>
           </div>
-          <div id="map" style="height: 400px; width: 100%"></div>
+          <div id="map"></div>
         </div>
       </section>
-
     </main>
     <footer class="footer-section">
       <div class="container grid grid--footer">
@@ -188,4 +213,3 @@ It is the highest standards of excellence in all fields of business that we stan
     <script src="./js/main.js"></script>
   </body>
 </html>
-
