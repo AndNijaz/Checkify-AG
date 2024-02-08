@@ -166,10 +166,11 @@
   /* ---------------- */
   .ceo-container {
     max-width: 90rem !important;
+    gap: 6.4rem !important;
   }
 
   .ceo-img img {
-    top: -11.5rem;
+    top: -9rem;
   }
 }
 
@@ -212,6 +213,10 @@
   /* ---------------- */
   /* HERO-SECTION */
   /* ---------------- */
+  .section-hero {
+    height: auto;
+  }
+
   .hero-text-container {
     text-align: center;
   }
@@ -229,11 +234,14 @@
   }
 
   .hero-image-container {
-    height: 65%;
+    /* height: 50vh; */
+    /* height: 50%; */
     margin: 0 auto;
   }
 
   .hero-image-container img {
+    /* display: block; */
+    /* display: none; */
     height: 100%;
   }
 
@@ -258,16 +266,16 @@
   .ceo-container {
     max-width: 65rem !important;
     padding: 3.2rem !important;
+    gap: 0px !important;
   }
-  .ceo-img {
-    height: 50%;
-  }
+
   .ceo-img img {
     display: none;
   }
-  .ceo-text button {
+  .ceo-text a {
     display: block;
     margin: 0 auto !important;
+    width: 40%;
   }
   .ceo-text h2 {
     text-align: center;
@@ -332,6 +340,12 @@
 
   .image-and-text-section {
     padding-top: 35.8rem;
+  }
+
+  .contact-wrapper {
+    padding-top: 6.4rem;
+    grid-template-rows: 5fr 3fr;
+    gap: 3.2rem;
   }
 }
 

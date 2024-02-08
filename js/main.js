@@ -29,7 +29,9 @@ allLinks.forEach((link) => {
   });
 });
 
-var map = L.map("map").setView([51.505, -0.09], 13);
+var map = L.map("map").setView([47.174449, 8.516427], 13);
+
+var marker = L.marker([47.174449, 8.516427]).addTo(map);
 
 const services = [
   "Managment of Swiss Companies",
