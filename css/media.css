@@ -214,7 +214,7 @@
   /* HERO-SECTION */
   /* ---------------- */
   .section-hero {
-    height: auto;
+    /* height: auto; */
   }
 
   .hero-text-container {
@@ -235,14 +235,15 @@
 
   .hero-image-container {
     /* height: 50vh; */
-    /* height: 50%; */
-    margin: 0 auto;
+    /* height: 70%; */
+    /* margin: 0 auto; */
   }
 
   .hero-image-container img {
     /* display: block; */
     /* display: none; */
     height: 100%;
+    display: none;
     object-fit: cover;
   }
 

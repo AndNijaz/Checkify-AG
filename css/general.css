@@ -175,6 +175,21 @@ a:visited {
 }
 
 /* ---------------- */
+/* IMAGES */
+/* ---------------- */
+img {
+  transition: filter 0.5s;
+}
+
+.img {
+  width: 100%;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}
+
+/* ---------------- */
 /* LINKS */
 /* ---------------- */
 
@@ -183,6 +198,12 @@ a:visited {
 /* ---------------- */
 section {
   padding: 9.6rem 0rem;
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 /* ---------------- */
