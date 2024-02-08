@@ -304,6 +304,10 @@
   justify-content: flex-end;
 }
 
+.about-us-image-container img {
+  width: auto;
+}
+
 .paragraph-div {
   display: flex;
   align-items: center;

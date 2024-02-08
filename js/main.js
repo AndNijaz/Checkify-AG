@@ -77,7 +77,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const url = window.location.href;
   const urlParts = url.split("/");
   const lastItem = urlParts[urlParts.length - 1].split(".")[0].trim();
+  const navLink = document.querySelectorAll(".main-nav-link");
+  console.log(navLink);
   if (lastItem === "services") {
+    // navLink.children.forEach((children) => children.classList.remove("active"));
+    navLink[1].classList.add("active");
+
     const servicesContainer = document.querySelector(".services-items");
 
     services.forEach((service) => {
@@ -143,6 +148,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
       secretarialServicesContainer.appendChild(newServiceItem);
     });
+
+    const imgTargets = document.querySelectorAll("img[data-src]");
+
+    const loadImg = function (entries, observer) {
+      const [entry] = entries;
+
+      if (!entry.isIntersecting) return;
+
+      entry.target.src = entry.target.dataset.src;
+
+      entry.target.addEventListener("load", function () {
+        entry.target.classList.remove("lazy-img");
+      });
+
+      observer.unobserve(entry.target);
+    };
+
+    const imgObserver = new IntersectionObserver(loadImg, {
+      root: null,
+      threshold: 0,
+    });
+
+    imgTargets.forEach((img) => imgObserver.observe(img));
+  } else if (lastItem === "about-us") {
+    navLink[2].classList.add("active");
+
+    const imgTargets = document.querySelectorAll("img[data-src]");
+
+    const loadImg = function (entries, observer) {
+      const [entry] = entries;
+
+      if (!entry.isIntersecting) return;
+
+      entry.target.src = entry.target.dataset.src;
+
+      entry.target.addEventListener("load", function () {
+        entry.target.classList.remove("lazy-img");
+      });
+
+      observer.unobserve(entry.target);
+    };
+
+    const imgObserver = new IntersectionObserver(loadImg, {
+      root: null,
+      threshold: 0,
+    });
+
+    imgTargets.forEach((img) => imgObserver.observe(img));
+  } else {
+    navLink[0].classList.add("active");
   }
 });
 
