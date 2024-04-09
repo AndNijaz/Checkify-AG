@@ -1,1 +1,1 @@
-Link: https://checkify-ag.netlify.app
+Link: https://checkify.ch/index.html 
