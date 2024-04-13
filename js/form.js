@@ -5,7 +5,6 @@ const cors = require("cors");
 // Load environment variables
 dotenv.config({ path: "info.env" });
 
-console.log(process.env.SMTP_HOST);
 // Create an Express app
 const app = express();
 app.use(cors());
