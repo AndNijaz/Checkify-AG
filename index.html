@@ -373,7 +373,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-form" id="contact">
+      <section id="contact" class="section section-form">
         <div class="contact-wrapper grid grid--2-cols">
           <div class="form-wrapper">
             <div class="form">
@@ -383,37 +383,50 @@
                   Feel free to <span>contact us.</span>
                 </h2>
               </div>
-
-              <div class="form-row">
-                <label for="username" class="form-paragraph">Full Name</label>
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  class="input-text"
-                  placeholder="  Name and Surname"
-                />
-              </div>
-              <div class="form-row">
-                <label for="email" class="form-paragraph">Email address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="input-text"
-                  placeholder="  Email"
-                />
-              </div>
-              <div class="form-row">
-                <label for="message" class="form-paragraph">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="input-text"
-                  placeholder="  Type your message here..."
-                ></textarea>
-              </div>
-              <button class="button">Submit</button>
+              <!-- Form starts here -->
+              <form
+                class="form"
+                id="contactForm"
+                method="POST"
+                action="/send-email"
+              >
+                <div class="form-row">
+                  <label for="username" class="form-paragraph">Full Name</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="input-text"
+                    placeholder="Name and Surname"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="email" class="form-paragraph"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="input-text"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="message" class="form-paragraph">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="input-text"
+                    placeholder="Type your message here..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+              </form>
+              <!-- Form ends here -->
             </div>
           </div>
           <div id="map"></div>
