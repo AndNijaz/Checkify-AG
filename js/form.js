@@ -2,6 +2,8 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const Imap = require("imap");
+
 // Load environment variables
 dotenv.config({ path: "info.env" });
 
@@ -31,10 +33,16 @@ app.post("/send-email", async (req, res) => {
   const { username, email, message } = req.body;
 
   const mailOptions = {
-    from: email,
-    to: "nikola.obradovic@stu.ssst.edu.ba",
+    from: process.env.SMTP_USER,
+    to: "nikolao2003@outlook.com",
     subject: `Contact Form Submission from ${username}`,
     text: `${message}\n\nFrom: ${username}\nEmail: ${email}`,
+    headers: {
+      "Reply-To": email, // Setting the Reply-To header
+      "MIME-Version": "1.0", // Setting MIME version
+      "Content-Type": "text/plain; charset=UTF-8",
+      "X-Mailer": "NodeMailer", // Optional header
+    },
   };
 
   try {
@@ -46,7 +54,36 @@ app.post("/send-email", async (req, res) => {
     res.status(500).send("Failed to send email.");
   }
 });
+//IMAP
+const imapConfig = {
+  host: process.env.SMTP_HOST,
+  port: 993,
 
+  user: process.env.SMTP_USER,
+  password: process.env.SMTP_PASSWORD,
+
+  tls: true,
+};
+
+// Function to handle IMAP connection and actions
+function connectImap() {
+  const imap = new Imap(imapConfig);
+
+  imap.once("ready", function () {
+    console.log("Connected to IMAP server");
+    // Perform IMAP actions here (e.g., fetching emails)
+    imap.end();
+  });
+
+  imap.once("error", function (err) {
+    console.error("IMAP error:", err);
+  });
+
+  imap.connect();
+}
+
+// Trigger the IMAP connection
+connectImap();
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
