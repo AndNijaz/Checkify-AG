@@ -57,7 +57,7 @@ app.post("/send-email", async (req, res) => {
 //IMAP
 const imapConfig = {
   host: process.env.SMTP_HOST,
-  port: 993,
+  port: process.env.IMAP_PORT,
 
   user: process.env.SMTP_USER,
   password: process.env.SMTP_PASSWORD,
