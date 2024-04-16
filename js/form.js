@@ -91,7 +91,7 @@ app.listen(PORT, () => {
 });
 app.use(
   cors({
-    origin: "http://127.0.0.1:5500", // Specify allowed origin
+    origin: "https://checkify.ch", // Specify allowed origin
     methods: ["POST", "GET"], // Specify allowed methods
     allowedHeaders: ["Content-Type"], // Specify allowed headers
   })

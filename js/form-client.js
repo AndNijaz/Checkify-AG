@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message: document.getElementById("message").value,
       };
 
-      fetch("http://localhost:3000/send-email", {
+      fetch("https://checkify.ch/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
